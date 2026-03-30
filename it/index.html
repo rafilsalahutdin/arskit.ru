@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPro - IT Solutions & Digital Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <span class="logo__icon">◈</span>
+                <span class="logo__text">TechPro</span>
+            </div>
+
+            <nav class="header__nav" id="nav">
+                <a href="#home" class="nav__link" data-i18n="nav_home">Главная</a>
+                <a href="#services" class="nav__link" data-i18n="nav_services">Услуги</a>
+                <a href="#about" class="nav__link" data-i18n="nav_about">О нас</a>
+                <a href="#projects" class="nav__link" data-i18n="nav_projects">Проекты</a>
+                <a href="#contact" class="nav__link" data-i18n="nav_contact">Контакты</a>
+            </nav>
+
+            <div class="header__actions">
+                <div class="search-box" id="searchBox">
+                    <input type="text" class="search__input" placeholder="Поиск..." id="searchInput">
+                    <button class="search__btn" id="searchBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <button class="lang-switch" id="langSwitch">
+                    <span class="lang__current">RU</span>
+                    <span class="lang__arrow">▼</span>
+                </button>
+
+                <button class="theme-toggle" id="themeToggle">
+                    <svg class="icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__bg">
+            <div class="hero__gradient hero__gradient--1"></div>
+            <div class="hero__gradient hero__gradient--2"></div>
+            <div class="hero__gradient hero__gradient--3"></div>
+        </div>
+
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__badge glass">
+                    <span class="badge__dot"></span>
+                    <span data-i18n="hero_badge">Доступны для проектов</span>
+                </div>
+
+                <h1 class="hero__title">
+                    <span data-i18n="hero_title_1">Цифровые решения</span>
+                    <span class="title__highlight" data-i18n="hero_title_2">для вашего бизнеса</span>
+                </h1>
+
+                <p class="hero__subtitle" data-i18n="hero_subtitle">
+                    Разрабатываем инновационные IT-решения: веб-приложения, мобильные приложения, облачные сервисы и
+                    автоматизацию бизнес-процессов
+                </p>
+
+                <div class="hero__actions">
+                    <button class="btn btn--primary" data-i18n="hero_cta_primary">
+                        Начать проект
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn btn--secondary glass" data-i18n="hero_cta_secondary">
+                        Наши работы
+                    </button>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="stat">
+                        <div class="stat__value">150+</div>
+                        <div class="stat__label" data-i18n="stat_projects">Проектов</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__value">98%</div>
+                        <div class="stat__label" data-i18n="stat_satisfaction">Довольных клиентов</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__value">5+</div>
+                        <div class="stat__label" data-i18n="stat_years">Лет опыта</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__visual">
+                <div class="code-window glass">
+                    <div class="code-window__header">
+                        <div class="code-window__dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="code-window__title">solution.js</div>
+                    </div>
+                    <div class="code-window__content">
+                        <pre><code><span class="code--keyword">const</span> <span class="code--function">transformBusiness</span> = () => {
+  <span class="code--keyword">return</span> {
+    <span class="code--prop">innovation</span>: <span class="code--string">'cutting-edge'</span>,
+    <span class="code--prop">efficiency</span>: <span class="code--string">'maximized'</span>,
+    <span class="code--prop">growth</span>: <span class="code--string">'exponential'</span>
+  }
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__scroll">
+            <div class="scroll__indicator"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title" data-i18n="services_title">Наши услуги</h2>
+                <p class="section__subtitle" data-i18n="services_subtitle">
+                    Комплексные IT-решения для развития вашего бизнеса
+                </p>
+            </div>
+
+            <div class="services__grid">
+                <div class="service-card glass">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title" data-i18n="service_1_title">Веб-разработка</h3>
+                    <p class="service-card__desc" data-i18n="service_1_desc">
+                        Современные веб-приложения на React, Vue, Node.js с адаптивным дизайном
+                    </p>
+                    <ul class="service-card__list">
+                        <li>Single Page Applications</li>
+                        <li>E-commerce платформы</li>
+                        <li>Корпоративные порталы</li>
+                    </ul>
+                    <button class="service-card__btn" data-i18n="service_more">Подробнее</button>
+                </div>
+
+                <div class="service-card glass">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title" data-i18n="service_2_title">Мобильная разработка</h3>
+                    <p class="service-card__desc" data-i18n="service_2_desc">
+                        Нативные и кроссплатформенные приложения для iOS и Android
+                    </p>
+                    <ul class="service-card__list">
+                        <li>iOS (Swift)</li>
+                        <li>Android (Kotlin)</li>
+                        <li>React Native / Flutter</li>
+                    </ul>
+                    <button class="service-card__btn" data-i18n="service_more">Подробнее</button>
+                </div>
+
+                <div class="service-card glass">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title" data-i18n="service_3_title">Облачные решения</h3>
+                    <p class="service-card__desc" data-i18n="service_3_desc">
+                        Миграция и развертывание в AWS, Azure, Google Cloud
+                    </p>
+                    <ul class="service-card__list">
+                        <li>DevOps & CI/CD</li>
+                        <li>Микросервисы</li>
+                        <li>Serverless архитектуры</li>
+                    </ul>
+                    <button class="service-card__btn" data-i18n="service_more">Подробнее</button>
+                </div>
+
+                <div class="service-card glass">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title" data-i18n="service_4_title">AI & Автоматизация</h3>
+                    <p class="service-card__desc" data-i18n="service_4_desc">
+                        Интеграция искусственного интеллекта и автоматизация процессов
+                    </p>
+                    <ul class="service-card__list">
+                        <li>Machine Learning</li>
+                        <li>Chatbots & NLP</li>
+                        <li>Workflow automation</li>
+                    </ul>
+                    <button class="service-card__btn" data-i18n="service_more">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content">
+                    <h2 class="section__title" data-i18n="about_title">Почему выбирают нас</h2>
+                    <p class="about__text" data-i18n="about_text">
+                        Мы команда профессионалов с многолетним опытом создания цифровых продуктов.
+                        Используем передовые технологии и лучшие практики разработки.
+                    </p>
+
+                    <div class="about__features">
+                        <div class="feature">
+                            <div class="feature__icon">✓</div>
+                            <div class="feature__text" data-i18n="feature_1">Agile методология</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon">✓</div>
+                            <div class="feature__text" data-i18n="feature_2">Прозрачная коммуникация</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon">✓</div>
+                            <div class="feature__text" data-i18n="feature_3">Гарантия качества</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon">✓</div>
+                            <div class="feature__text" data-i18n="feature_4">Поддержка 24/7</div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn--primary" data-i18n="about_cta">Узнать больше</button>
+                </div>
+
+                <div class="about__visual">
+                    <div class="about__image glass">
+                        <div class="about__placeholder">
+                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span data-i18n="team_photo">Команда</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__wrapper glass">
+                <div class="contact__info">
+                    <h2 class="section__title" data-i18n="contact_title">Давайте работать вместе</h2>
+                    <p class="contact__text" data-i18n="contact_text">
+                        Готовы обсудить ваш проект? Свяжитесь с нами любым удобным способом
+                    </p>
+
+                    <div class="contact__details">
+                        <div class="contact__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>hello@techpro.com</span>
+                        </div>
+                        <div class="contact__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <span>+998 (90) 123-45-67</span>
+                        </div>
+                        <div class="contact__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Tashkent, Uzbekistan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form" id="contactForm">
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder=" " required>
+                        <label class="form__label" data-i18n="form_name">Ваше имя</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder=" " required>
+                        <label class="form__label" data-i18n="form_email">Email</label>
+                    </div>
+                    <div class="form__group">
+                        <textarea class="form__input form__textarea" placeholder=" " rows="4" required></textarea>
+                        <label class="form__label" data-i18n="form_message">Сообщение</label>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full" data-i18n="form_submit">
+                        Отправить сообщение
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span class="logo__icon">◈</span>
+                        <span class="logo__text">TechPro</span>
+                    </div>
+                    <p class="footer__desc" data-i18n="footer_desc">
+                        Создаем цифровое будущее сегодня
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <h4 data-i18n="footer_nav">Навигация</h4>
+                    <a href="#home" data-i18n="nav_home">Главная</a>
+                    <a href="#services" data-i18n="nav_services">Услуги</a>
+                    <a href="#about" data-i18n="nav_about">О нас</a>
+                    <a href="#contact" data-i18n="nav_contact">Контакты</a>
+                </div>
+
+                <div class="footer__links">
+                    <h4 data-i18n="footer_services">Услуги</h4>
+                    <a href="#" data-i18n="service_1_title">Веб-разработка</a>
+                    <a href="#" data-i18n="service_2_title">Мобильная разработка</a>
+                    <a href="#" data-i18n="service_3_title">Облачные решения</a>
+                    <a href="#" data-i18n="service_4_title">AI & Автоматизация</a>
+                </div>
+
+                <div class="footer__social">
+                    <h4 data-i18n="footer_social">Мы в соцсетях</h4>
+                    <div class="social__links">
+                        <a href="#" class="social__link" aria-label="Telegram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social__link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social__link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 TechPro. <span data-i18n="footer_rights">Все права защищены</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
