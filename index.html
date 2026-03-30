@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ar2Net - IT Услуги</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="pixel-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="pixel-text">◈</span> Ar2Net
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="pixel-link">Главная</a></li>
+                <li><a href="#services" class="pixel-link">Услуги</a></li>
+                <li><a href="#about" class="pixel-link">О нас</a></li>
+                <li><a href="#contact" class="pixel-link">Контакты</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Isometric Office -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="pixel-title glitch" data-text="IT РЕШЕНИЯ">IT РЕШЕНИЯ</h1>
+            <p class="pixel-subtitle">Профессиональные услуги в мире технологий</p>
+            <div class="cta-buttons">
+                <button class="pixel-btn primary" onclick="scrollToSection('contact')">
+                    <span>Заказать</span>
+                </button>
+                <button class="pixel-btn secondary" onclick="scrollToSection('services')">
+                    <span>Услуги</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Isometric Office CSS Art -->
+        <div class="isometric-office">
+            <img src="img/hero+.png" alt="" style="max-width: 100%; width: 600px;height: auto;">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title pixel-text">НАШИ УСЛУГИ</h2>
+            <div class="services-grid">
+                <div class="service-card pixel-card" data-tilt>
+                    <div class="card-icon">💻</div>
+                    <h3>Веб-разработка</h3>
+                    <p>Создание современных сайтов с использованием передовых технологий</p>
+                    <ul class="pixel-list">
+                        <li>▸ Landing Page</li>
+                        <li>▸ Корпоративные сайты</li>
+                        <li>▸ Интернет-магазины</li>
+                    </ul>
+                </div>
+
+                <div class="service-card pixel-card" data-tilt>
+                    <div class="card-icon">🤖</div>
+                    <h3>Автоматизация</h3>
+                    <p>Автоматизация бизнес-процессов с помощью n8n и других инструментов</p>
+                    <ul class="pixel-list">
+                        <li>▸ AI автоматизация</li>
+                        <li>▸ Интеграции API</li>
+                        <li>▸ Чат-боты</li>
+                    </ul>
+                </div>
+
+                <div class="service-card pixel-card" data-tilt>
+                    <div class="card-icon">🧠</div>
+                    <h3>Vibe-coding</h3>
+                    <p>Быстрое прототипирование с использованием ИИ</p>
+                    <ul class="pixel-list">
+                        <li>▸ Прототипы</li>
+                        <li>▸ MVP-проекты</li>
+                        <li>▸ Проверка гепотиз</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title pixel-text">О КОМПАНИИ</h2>
+                    <p class="pixel-paragraph">
+                        Мы команда энтузиастов, создающих цифровые решения в стиле retro-futurism.
+                        Сочетаем современные технологии с креативным подходом.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="150">0</span>
+                            <span class="stat-label">Проектов</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-label">Клиентов</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-label">Лет опыта</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="pixel-monitor">
+                        <div class="monitor-screen">
+                            <div class="code-lines">
+                                <div class="code-line"><span class="keyword">const</span> <span
+                                        class="variable">success</span> = <span class="function">create</span>();</div>
+                                <div class="code-line"><span class="keyword">if</span> (Ar2Net) {'{'}</div>
+                                <div class="code-line">&nbsp;&nbsp;<span class="variable">quality</span>++;</div>
+                                <div class="code-line">{'}'}</div>
+                            </div>
+                        </div>
+                        <div class="monitor-stand"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title pixel-text">СВЯЗАТЬСЯ</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form pixel-form" id="contactForm">
+                    <div class="form-group">
+                        <label class="pixel-label">Имя:</label>
+                        <input type="text" class="pixel-input" required placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label class="pixel-label">Email:</label>
+                        <input type="email" class="pixel-input" required placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="pixel-label">Сообщение:</label>
+                        <textarea class="pixel-textarea" rows="5" required placeholder="Ваше сообщение..."></textarea>
+                    </div>
+                    <button type="submit" class="pixel-btn primary full-width">
+                        <span>Отправить</span>
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-card pixel-card">
+                        <h3>Контакты</h3>
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <span>ar2net@yandex.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📱</span>
+                            <span>+7 (999) 123-45-67</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <span>Москва, Pixel Street 8bit</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https//t.me/@ar2net" class="social-link pixel-btn">TG</a>
+                        <a href="#" class="social-link pixel-btn">GH</a>
+                        <a href="#" class="social-link pixel-btn">VK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="pixel-text">© 2026 Ar2Net. Все права защищены.</p>
+            <p class="footer-tagline">Сделано ИИ с ❤️ в пиксельном стиле</p>
+        </div>
+    </footer>
+
+    <!-- Cursor Effect -->
+    <div class="cursor" id="cursor"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
