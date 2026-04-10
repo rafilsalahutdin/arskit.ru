@@ -291,5 +291,5 @@ screens.forEach(screen => {
     }, 2000);
 });
 
-console.log('%c PixelIT - IT Solutions ', 'background: #e94560; color: white; font-size: 20px; font-family: "Press Start 2P"');
-console.log('%c Built with ❤️ in pixel art style ', 'color: #e94560; font-size: 12px');
+//console.log('%c PixelIT - IT Solutions ', 'background: #e94560; color: white; font-size: 20px; font-family: "Press Start 2P"');
+//console.log('%c Built with ❤️ in pixel art style ', 'color: #e94560; font-size: 12px');
