@@ -115,23 +115,6 @@ document.querySelectorAll('.fade-in, .service-card, .stat-item').forEach(el => {
     observer.observe(el);
 });
 
-// ===== FORM HANDLING =====
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-
-    // Show success message (in real app, send to server)
-    showNotification('Сообщение отправлено! Мы свяжемся с вами soon.', 'success');
-
-    // Reset form
-    contactForm.reset();
-});
-
 // ===== NOTIFICATION SYSTEM =====
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
